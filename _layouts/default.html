@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - ENC 4936 Portfolio</title>
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ '/index.html' | relative_url }}">Home</a>
+    <a href="{{ '/exercises.html' | relative_url }}">Weekly Exercises</a>
+    <a href="{{ '/principles.html' | relative_url }}">Principles in Action</a>
+    <a href="{{ '/heuristic.html' | relative_url }}">Heuristic Evaluation</a>
+    <a href="{{ '/usability.html' | relative_url }}">Usability Study</a>
+    <a href="{{ '/redesign.html' | relative_url }}">Redesign</a>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>ENC 4936: Topics in Technical Communication</p>
+  </footer>
+</body>
+</html>

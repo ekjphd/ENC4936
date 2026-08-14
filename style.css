@@ -1,0 +1,193 @@
+/* =========================================================
+   YOUR COLOR PALETTE
+   =========================================================
+   This is the only section most people need to touch.
+
+   Each line below gives a color a NAME and a CODE.
+   The code is a hex color: a # followed by six characters.
+
+   To try a new color, replace the code and save the file.
+   Wait about two minutes, then reload your site.
+
+   Want to find your own colors? Search "hex color picker",
+   pick one you like, and copy the code it gives you.
+   ========================================================= */
+
+:root {
+  --navy:   #12233f;   /* deep navy   */
+  --purple: #6a4c93;   /* purple      */
+  --teal:   #128f76;   /* teal        */
+  --blue:   #1c5fa8;   /* blue        */
+  --green:  #3f7d20;   /* green       */
+  --black:  #14161a;   /* almost black */
+  --white:  #ffffff;   /* white       */
+
+  /* Pale versions, used as backgrounds for boxes. */
+  --pale-purple: #f2eefb;
+  --pale-teal:   #e6f5f0;
+  --pale-green:  #eef5e6;
+
+/* =========================================================
+   WHERE EACH COLOR GETS USED
+   =========================================================
+   Every line below points at a NAME from the list above.
+
+   To recolor one part of your site, change only the name
+   on the right. For example, to make your headings teal
+   instead of purple, change this:
+
+       --heading-color: var(--purple);
+
+   into this:
+
+       --heading-color: var(--teal);
+
+   You do not need to touch anything further down the file.
+   ========================================================= */
+
+  --page-background:   var(--white);
+  --body-text:         var(--black);
+
+  --nav-background:    var(--navy);
+  --nav-text:          var(--white);
+  --nav-hover:         var(--teal);
+
+  --title-color:       var(--navy);    /* the big title on each page */
+  --title-underline:   var(--purple);  /* the line under that title  */
+  --heading-color:     var(--purple);  /* section headings           */
+  --small-heading:     var(--teal);    /* smaller headings           */
+
+  --link-color:        var(--blue);
+
+  --note-border:       var(--teal);
+  --note-background:   var(--pale-teal);
+  --tip-border:        var(--green);
+  --tip-background:    var(--pale-green);
+  --quote-border:      var(--purple);
+  --quote-background:  var(--pale-purple);
+}
+
+/* =========================================================
+   PAGE BASICS
+   Fonts and spacing. Safe to change, but you can ignore it.
+   ========================================================= */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;        /* make this bigger or smaller if you like */
+  line-height: 1.6;       /* space between lines of text            */
+  color: var(--body-text);
+  background: var(--page-background);
+}
+
+/* The column your writing sits in.
+   Raise 800px to widen the page, lower it to narrow the page. */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* =========================================================
+   NAVIGATION BAR
+   The strip of links across the top of every page.
+   ========================================================= */
+
+nav {
+  background: var(--nav-background);
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--nav-hover);
+}
+
+/* =========================================================
+   HEADINGS
+   # in your file is h1, ## is h2, ### is h3.
+   ========================================================= */
+
+h1 {
+  color: var(--title-color);
+  border-bottom: 3px solid var(--title-underline);
+  padding-bottom: 0.4rem;
+}
+
+h2 { color: var(--heading-color); }
+
+h3 { color: var(--small-heading); }
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a { color: var(--link-color); }
+
+a:hover { text-decoration: underline; }
+
+/* =========================================================
+   TEXT BOXES
+   =========================================================
+   Use these to make something stand out.
+   In your .md file, type the HTML exactly like this:
+
+       <div class="note">Your text goes here.</div>
+       <div class="tip">Your text goes here.</div>
+
+   Leave a blank line above and below the box.
+   ========================================================= */
+
+.note {
+  background: var(--note-background);
+  border-left: 5px solid var(--note-border);
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.tip {
+  background: var(--tip-background);
+  border-left: 5px solid var(--tip-border);
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+}
+
+/* A quote. In markdown, start the line with > */
+blockquote {
+  background: var(--quote-background);
+  border-left: 5px solid var(--quote-border);
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+}
+
+/* =========================================================
+   IMAGES
+   Keeps a large screenshot from running off the page.
+   ========================================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #dddddd;
+  color: #666666;
+  font-size: 15px;
+}
