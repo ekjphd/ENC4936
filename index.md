@@ -3,13 +3,11 @@ layout: default
 title: Home
 ---
 
-# Your Name Here
+# [your name goes here]
 
-[Write one or two sentences about yourself here. Who are you, what do you study, and what kind of work do you want to be doing? Anyone on the internet can read this page, so write it for a stranger.]
+[professional introduction for a potential employer goes here]
 
 ## Weekly Exercises
-
-Short analyses of how games and other interfaces teach people to use them.
 
 - [All weekly exercises](exercises.html)
 

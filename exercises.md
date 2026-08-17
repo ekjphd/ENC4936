@@ -5,9 +5,7 @@ title: Weekly Exercises
 
 # Weekly Exercises
 
-Each week I choose one option from the exercise menu, find an example in the wild, and analyze what it shows about how information gets communicated.
-
-- [Exercise 1: Digital portfolio setup](exercise1.html)
+- [Exercise 1](exercise1.html)
 - [Exercise 2](exercise2.html)
 - [Exercise 3](exercise3.html)
 - [Exercise 4](exercise4.html)
