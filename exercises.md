@@ -5,7 +5,6 @@ title: Weekly Exercises
 
 # Weekly Exercises
 
-- [Exercise 1](exercise1.html)
 - [Exercise 2](exercise2.html)
 - [Exercise 3](exercise3.html)
 - [Exercise 4](exercise4.html)
